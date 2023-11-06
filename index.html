@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="container shadow p-3 mb-5 bg-body-tertiary rounded">
+      <nav class="container d-flex p-2 justify-content-between border-bottom">
+        <img width="200px" height = "100px" src="logoZSTI.jpg" alt="super logo" class="">
+        <h2>Zespół Szkół Techniczno-Informatycznych 
+          <span class="fs-5">W gliwicach</span>
+        </h2>
+        <div>
+          <button class="btn btn-primary">Home</button>
+          <button class="btn btn-link">About</button>
+        </div>
+        
+
+      </nav >
+      <h1 class="text-center">Zadania do wykonania</h1>
+    </header>
+
+    <main class="container row text-center mx-auto ">
+      <div class="col-4 border p-3 ">
+        <div class="border p-3">
+          <h4>Dodawanie zadania</h4>
+          <label for="">Nazwa zadania<input type="text"></label>
+          <label for="">Kategoria zadania<select>
+            <option value="dom">dom</option>
+          </select></label>
+
+        </div>
+        <div class="border d-flex flex-column p-3 mt-3">
+          <h4>Edycja zadania</h4>
+          <label for="">Nazwa zadania<input type="text"></label>
+          <label for="">Kategoria zadania<select>
+            <option value="dom">dom</option>
+          </select></label>
+          <label for=""><input type="checkbox" name="" id="">zrobione</label>
+          <button class="btn btn-primary">Zapisz zadanie💾</button>
+        </div>
+
+      </div>
+
+      <div class="col-8 border">
+        <h4>Lista zadań</h4>
+        <div>
+          <h3>Do zrobienia</h3>
+          <ol class="list-group list-group-numbered">
+            <li class=" list-group-item d-flex my-auto">
+              <div class="container-fluid row gap-2 ">
+              <p class="col-5 text-start">An item</p>
+              <p class="col-1 text-start">Hobby</p>
+              <input type="checkbox" class="col-1 form-check-input bg-warning p-3" name="" id="" checked>
+              <div class="col-1"></div>
+              <button class="col-1">S</button>
+              <button class="col-1">E</button>
+              <button class="col-1">D</button>
+            </div>
+            </li>
+
+            <li class=" list-group-item d-flex my-auto">
+              <div class="container-fluid row gap-2 ">
+              <p class="col-5 text-start">A second item</p>
+              <p class="col-1 text-start">dom</p>
+              <input type="checkbox" class="col-1 form-check-input bg-warning p-3" name="" id="" checked>
+              <div class="col-1"></div>
+              <button class="col-1">S</button>
+              <button class="col-1">E</button>
+              <button class="col-1">D</button>
+            </div>
+
+            </li> <li class=" list-group-item d-flex my-auto">
+              <div class="container-fluid row gap-2 ">
+              <p class="col-5 text-start">A third item</p>
+              <p class="col-1 text-start">praca</p>
+              <input type="checkbox" class="col-1 form-check-input bg-warning p-3" name="" id="" checked>
+              <div class="col-1"></div>
+              <button class="col-1">S</button>
+              <button class="col-1">E</button>
+              <button class="col-1">D</button>
+            </div>
+            </li>
+          </ol>
+        </div>
+        <div></div>
+
+      </div>
+
+    </main>
+
+  </body>
+</html>

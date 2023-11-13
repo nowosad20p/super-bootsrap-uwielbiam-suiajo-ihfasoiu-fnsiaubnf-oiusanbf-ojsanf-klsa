@@ -11,6 +11,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/88fb4b54e6.js" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -18,48 +19,52 @@
     ></script>
   </head>
   <body>
-    <header class="container shadow p-3 mb-5 bg-body-tertiary rounded">
+    <header class="container shadow p-3 mb-4  rounded">
       <nav class="container d-flex p-2 justify-content-between border-bottom">
         <img width="200px" height = "100px" src="logoZSTI.jpg" alt="super logo" class="">
-        <h2>Zespół Szkół Techniczno-Informatycznych 
-          <span class="fs-5">W gliwicach</span>
+        <h2 class="fw-semibold">Zespół Szkół Techniczno-Informatycznych 
+          <span class="fs-5">W Gliwicach</span>
         </h2>
         <div>
           <button class="btn btn-primary">Home</button>
-          <button class="btn btn-link">About</button>
+          <button class="btn btn-link text-decoration-none">About</button>
         </div>
         
 
       </nav >
-      <h1 class="text-center">Zadania do wykonania</h1>
+      <h1 class="text-center fw-semibold p-2 mb-0">Zadania do wykonania</h1>
     </header>
 
-    <main class="container row text-center mx-auto ">
-      <div class="col-4 border p-3 ">
-        <div class="border p-3">
-          <h4>Dodawanie zadania</h4>
-          <label for="">Nazwa zadania<input type="text"></label>
-          <label for="">Kategoria zadania<select>
+    <main class="row text-center mx-auto d-flex gap-2 justify-content-center ">
+      <div class="col-2 border rounded p-3 ">
+        <div class=" rounded border p-3 d-flex flex-column">
+          <h4 class="fw-semibold">Dodawanie zadania</h4>
+          <label class="text-start" for="">Nazwa zadania</label>
+          <input type="text" class="form-control">
+          <label class="text-start" for="">Kategoria zadania</label>
+          <select class="form-select">
             <option value="dom">dom</option>
-          </select></label>
-
+          </select>
+          <button class="btn btn-success mt-3">Dodaj zadanie <i class="fa-regular fa-square-plus"></i></button>
         </div>
-        <div class="border d-flex flex-column p-3 mt-3">
-          <h4>Edycja zadania</h4>
-          <label for="">Nazwa zadania<input type="text"></label>
-          <label for="">Kategoria zadania<select>
+        <div class="rounded border border-warning d-flex flex-column p-3 mt-3">
+          <h4 class="fw-semibold">Edycja zadania</h4>
+          <label class="text-start" for="">Nazwa zadania</label>
+          <input type="text" class="form-control">
+          <label class="text-start" for="">Kategoria zadania</label>
+          <select class="form-select">
             <option value="dom">dom</option>
-          </select></label>
-          <label for=""><input type="checkbox" name="" id="">zrobione</label>
-          <button class="btn btn-primary">Zapisz zadanie💾</button>
+          </select>
+          <label class="text-start" for=""><input class="m-1" type="checkbox" name="" id="">zrobione</label>
+          <button class="btn btn-primary">Zapisz zadanie <i class="fa-regular fa-floppy-disk"></i></button>
         </div>
 
       </div>
 
-      <div class="col-8 border">
-        <h4>Lista zadań</h4>
-        <div>
-          <h3>Do zrobienia</h3>
+      <div class="col-6 border rounded p-3">
+        <h4 class="p-3 fw-semibold">Lista zadań</h4>
+        <div class="border border-danger rounded p-4 m-3">
+          <h3 class="text-danger text-start fw-semibold">Do zrobienia</h3>
           <ol class="list-group list-group-numbered">
             <li class=" list-group-item d-flex my-auto">
               <div class="container-fluid row gap-2 ">
@@ -67,9 +72,10 @@
               <p class="col-1 text-start">Hobby</p>
               <input type="checkbox" class="col-1 form-check-input bg-warning p-3" name="" id="" checked>
               <div class="col-1"></div>
-              <button class="col-1">S</button>
-              <button class="col-1">E</button>
-              <button class="col-1">D</button>
+              <button class="col-1 btn btn-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="col-1 btn btn-primary"><i class="fa-regular fa-floppy-disk"></i></button>
+             
+              <button class="col-1 btn btn-danger"><i class="fa-solid fa-trash"></i></button>
             </div>
             </li>
 
@@ -79,9 +85,10 @@
               <p class="col-1 text-start">dom</p>
               <input type="checkbox" class="col-1 form-check-input bg-warning p-3" name="" id="" checked>
               <div class="col-1"></div>
-              <button class="col-1">S</button>
-              <button class="col-1">E</button>
-              <button class="col-1">D</button>
+              <button class="col-1 btn btn-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="col-1 btn btn-primary"><i class="fa-regular fa-floppy-disk"></i></button>
+             
+              <button class="col-1 btn btn-danger"><i class="fa-solid fa-trash"></i></button>
             </div>
 
             </li> <li class=" list-group-item d-flex my-auto">
@@ -90,9 +97,39 @@
               <p class="col-1 text-start">praca</p>
               <input type="checkbox" class="col-1 form-check-input bg-warning p-3" name="" id="" checked>
               <div class="col-1"></div>
-              <button class="col-1">S</button>
-              <button class="col-1">E</button>
-              <button class="col-1">D</button>
+              <button class="col-1 btn btn-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="col-1 btn btn-primary"><i class="fa-regular fa-floppy-disk"></i></button>
+             
+              <button class="col-1 btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+            </div>
+            </li>
+          </ol>
+        </div>
+        <div class="border rounded border-success m-3 p-4">
+          <h3 class="text-success text-start fw-semibold">Zrobione</h3>
+          <ol class="list-group list-group-numbered ">
+            <li class="text-light list-group-item bg-secondary list-group-item d-flex my-auto">
+              <div class="container-fluid row gap-2 ">
+                <span class="text-decoration-line-through text-success col-5"><p class="text-start text-light">An item</p></span>
+              <p class="col-1 text-start">dom</p>
+              <input type="checkbox" class="border border-light col-1 form-check-input bg-success p-3" name="" id="" checked>
+              <div class="col-1"></div>
+              <button class="border border-light col-1 btn btn-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="border border-light col-1 btn btn-primary"><i class="fa-regular fa-floppy-disk"></i></button>
+             
+              <button class="border border-light col-1 btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+            </div>
+            </li>
+            <li class="text-light  list-group-item bg-secondary list-group-item d-flex my-auto">
+              <div class="container-fluid row gap-2 ">
+              <span class="text-decoration-line-through text-success col-5"><p class="text-start text-light">An second</p></span>
+              <p class="col-1 text-start ">dom</p>
+              <input type="checkbox" class="border border-light col-1 form-check-input bg-success p-3" name="" id="" checked>
+              <div class="col-1"></div>
+              <button class="col-1 btn btn-secondary border border-light"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button class="col-1 btn btn-primary border border-light"><i class="fa-regular fa-floppy-disk"></i></button>
+             
+              <button class="col-1 btn btn-danger border border-light"><i class="fa-solid fa-trash"></i></button>
             </div>
             </li>
           </ol>
@@ -102,6 +139,8 @@
       </div>
 
     </main>
-
+    <footer class="rounded container mt-3 p-4 text-center border shadow">
+      &copy Me
+    </footer>
   </body>
 </html>
